@@ -148,7 +148,7 @@ const CATEGORIES = [
     "7. Kế toán giao dịch nội bộ", "8. Kế toán giao dịch khách hàng", "9. Kiểm ngân", 
     "10. Kiểm tra giám sát nội bộ", "11. Công nghệ thông tin", "12. Nhân sự - tiền lương", 
     "13. Pháp chế", "14. Xây dựng cơ bản, quản trị hành chính", "15. Văn thư lễ tân", 
-    "Kien thuc chung"
+    "Kiến Thức Chung"
 ];
 
 let specializedData = [];
@@ -295,7 +295,7 @@ function startPractice(catName) {
 
 function startExam(catName) {
     const specQs = extractQuestions(catName, false);
-    const genQs = extractQuestions("Kien thuc chung", true);
+    const genQs = extractQuestions("Kiến thức chung", true);
     
     let sPool = specQs.sort(() => 0.5 - Math.random()).slice(0, 75);
     let gPool = genQs.sort(() => 0.5 - Math.random()).slice(0, 25);
